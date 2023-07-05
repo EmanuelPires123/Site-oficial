@@ -42,7 +42,22 @@
             </p>
             <p>
                 <laber for="numero">Numero: </laber>
-                <input type="number" id="numero" placeholder="Digite o numero de sua casa">
+                <input type="number" id="numero" min="0" max="9999999999999">
+                <p>
+                    <label for="estado">Estado</label>
+                    <select id="estado">
+                        <optgroup label="regiao sudeste">
+                        <option value="RJ">RJ</option>
+                        <option value="BH">BH</option>
+                        <option value="SP">SP</option>
+                        </optgroup>
+                        <optgroup label="regiao sul">
+                            <option value="PR">PR</option>
+                            <option value="SC">SC</option>
+                            <option value="RG">RG</option>
+                            </optgroup>
+                    </select>
+                </p>
             </p>
         </fieldset>
     </form>
